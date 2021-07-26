@@ -1,0 +1,1 @@
+SELECT projects.projectid, projectname FROM projects LEFT JOIN usersprojects ON projects.projectid = usersprojects.projectid WHERE usersprojects.userid = ?

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane fx:id="tp_Root" tabClosingPolicy="UNAVAILABLE" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+         xmlns:fx="http://javafx.com/fxml/1" fx:controller="timeplanner.MainFrame.MainFrameScreenController">
+
+    <Tab text="Zeit-Erfassung" fx:id="tab_TrackingScreen">
+        <fx:include source="TrackingScreen.fxml" fx:id="tab_TrackingScreenPage"/>
+    </Tab>
+    <Tab text="Zeit-Übersicht" fx:id="tab_Trackingslist">
+        <fx:include source="TrackingListScreen.fxml" fx:id="tab_TrackingslistPage"/>
+    </Tab>
+    <Tab text="Projektübersicht" fx:id="tab_ProjectList">
+        <fx:include source="ProjectsListScreen.fxml" fx:id="tab_ProjectListPage"/>
+    </Tab>
+    <Tab text="Projektdetails" fx:id="tab_ProjectDetails">
+        <fx:include source="ProjectScreen.fxml" fx:id="tab_ProjectDetailsPage"/>
+    </Tab>
+    <Tab text="Kundenübersicht" fx:id="tab_CustomersList">
+        <fx:include source="CustomerListScreen.fxml" fx:id="tab_CustomersListPage"/>
+    </Tab>
+
+</TabPane>
